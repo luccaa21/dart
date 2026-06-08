@@ -15,4 +15,13 @@ class Pivo extends Jogador {
     this._protetorAro,
     this._especialistaRebotes,
   );
+
+  // getters
+  bool get protetorAro => _protetorAro;
+  bool get especialistaRebotes => _especialistaRebotes;
+
+  // setters
+  set protetorAro(bool protetor) => _protetorAro = protetor;
+  set especialistaRebotes(bool especialista) =>
+      _especialistaRebotes = especialista;
 }

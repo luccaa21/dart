@@ -6,4 +6,10 @@ class Estatistica {
 
   // não há necessidade de escrever o construtor, é criado automaticamente
   // Estatistica();
+
+  // getters
+  int get partidasJogadas => _partidasJogadas;
+  int get totalPontos => _totalPontos;
+  int get totalRebotes => _totalRebotes;
+  int get totalAssistencias => _totalAssistencias;
 }

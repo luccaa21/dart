@@ -15,4 +15,13 @@ class Armador extends Jogador {
     this._controleBola,
     this._especialistaPerimetro,
   );
+
+  // getters
+  int get controleBola => _controleBola;
+  bool get especialistaPerimetro => _especialistaPerimetro;
+
+  // setters
+  set controleBola(int novoControle) => _controleBola = novoControle;
+  set especialistaPerimetro(bool especialista) =>
+      _especialistaPerimetro = especialista;
 }

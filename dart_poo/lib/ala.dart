@@ -15,4 +15,13 @@ class Ala extends Jogador {
     this._explosaoFisica,
     this._especialistaInfiltracao,
   );
+
+  // getters
+  int get explosaoFisica => _explosaoFisica;
+  bool get especialistaInfiltracao => _especialistaInfiltracao;
+
+  // setters
+  set protetorAro(int novaExplosao) => _explosaoFisica = novaExplosao;
+  set especialistaInfiltracao(bool especialista) =>
+      _especialistaInfiltracao = especialista;
 }

@@ -21,4 +21,21 @@ class Jogador {
     this._nivelRebote,
     this._nivelPasse,
   );
+
+  // getters
+  String get nome => _nome;
+  int get numCamisa => _numCamisa;
+  double get altura => _altura;
+  int get idade => _idade;
+  Equipe? get equipe => _equipe;
+  int get nivelArremesso => _nivelArremesso;
+  int get nivelRebote => _nivelRebote;
+  int get nivelPasse => _nivelPasse;
+  Estatistica get estatisticas => _estatisticas;
+
+  // setters
+  set nome(String novoNome) => _nome = novoNome;
+  set numCamisa(int novoNumero) => _numCamisa = novoNumero;
+  set altura(double novaAltura) => _altura = novaAltura;
+  set idade(int novaIdade) => _idade = novaIdade;
 }
