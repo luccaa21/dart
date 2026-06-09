@@ -19,7 +19,7 @@ class Equipe {
     if(j.equipe == null) { // só permite contratar um jogador sem equipe
       j.equipe = this;
       _jogadores.add(j);
-      print('O jogador ${j.nome} foi contratado!');
+      print('O jogador ${j.nome} foi contratado para o $_nome');
     } else{
       print('O jogador ${j.nome} já possui uma equipe, portanto, não pode ser contratado.');
     }
