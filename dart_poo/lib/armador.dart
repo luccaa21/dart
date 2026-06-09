@@ -16,6 +16,17 @@ class Armador extends Jogador {
     this._especialistaPerimetro,
   );
 
+  // método
+  @override
+  void treinar(){
+    if(nivelPasse + 2 <= 99){
+      nivelPasse += 2;
+    }
+    if(nivelArremesso + 1 <= 99){
+      nivelArremesso += 1;
+    }
+  }
+
   // getters
   int get controleBola => _controleBola;
   bool get especialistaPerimetro => _especialistaPerimetro;

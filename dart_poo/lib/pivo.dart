@@ -16,6 +16,17 @@ class Pivo extends Jogador {
     this._especialistaRebotes,
   );
 
+  // método
+  @override
+  void treinar(){
+    if(nivelRebote + 2 <= 99){
+      nivelRebote += 2;
+    }
+    if(nivelArremesso + 1 <= 99){
+      nivelArremesso += 1;
+    }
+  }
+
   // getters
   bool get protetorAro => _protetorAro;
   bool get especialistaRebotes => _especialistaRebotes;

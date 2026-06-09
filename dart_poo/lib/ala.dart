@@ -16,6 +16,17 @@ class Ala extends Jogador {
     this._especialistaInfiltracao,
   );
 
+  // método
+  @override
+  void treinar(){
+    if(nivelPasse + 1 <= 99){
+      nivelPasse += 1;
+    }
+    if(nivelArremesso + 2 <= 99){
+      nivelArremesso += 2;
+    }
+  }
+
   // getters
   int get explosaoFisica => _explosaoFisica;
   bool get especialistaInfiltracao => _especialistaInfiltracao;
