@@ -41,14 +41,15 @@ abstract class Jogador {
     print('--- Perfil do Jogador ---');
     print('Nome: $_nome | #$_numCamisa');
     // 'runtimeType' descobre se o jogador em questão é armador, ala ou pivô em tempo de execução
-    print('Posição: ($runtimeType) | Altura: $_altura m | Idade: $_idade anos');
+    print('Posição: $runtimeType | Altura: $_altura m | Idade: $_idade anos');
     print('Equipe atual: $nomeDoTime');
     print('Nível Geral: ${calcularNivel().toStringAsFixed(1)}');
     print('-------------------------');
   }
 
   double calcularNivel() {
-    return (_nivelArremesso + _nivelRebote + _nivelPasse) / 3;
+    double media = (_nivelArremesso + _nivelRebote + _nivelPasse) / 3;
+    return double.parse(media.toStringAsFixed(2));
   }
 
   void treinar();
